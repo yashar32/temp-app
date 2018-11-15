@@ -1,7 +1,7 @@
 
 function cTofTok(){
   
-    const cTemp =parseFloat(celciusInput.value);
+    const cTemp =parseFloat(celsiusInput.value);
     const fTemp=(cTemp * (9/5)) +32;
     const kTemp=cTemp+ 273.15;
     console.log("c-works");
@@ -15,7 +15,7 @@ function cTofTok(){
     const kTemp = (fTemp+459.67)*5/9;
     console.log("f- works");
     kelvinInput.value= roundNum(kTemp); 
-    celciusInput.value= roundNum(cTemp);
+    celsiusInput.value= roundNum(cTemp);
   }
   
   function kTofToc(){
@@ -23,14 +23,14 @@ function cTofTok(){
     const cTemp= kTemp - 273.15;
     const fTemp = 9/5 *(kTemp - 273)+32;
     console.log("k-works");
-    celciusInput.value= roundNum(cTemp);
+    celsiusInput.value= roundNum(cTemp);
     fahrenheitInput.value = roundNum(fTemp);
   }
   
   
   function main(){
   
-  celciusInput.addEventListener('input', cTofTok);
+  celsiusInput.addEventListener('input', cTofTok);
   fahrenheitInput.addEventListener('input', fTocTok);
   kelvinInput.addEventListener('input', kTofToc);
     console.log("yashar");
